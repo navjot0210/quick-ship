@@ -74,8 +74,8 @@ nav ul li a:hover {
 }
 
 .button {
-  width: 84px;
-  height: 44px;
+  width: 90px;
+  height: 46px;
   line-height: 44px;
   border-radius: var(--border-radius);
   background-color: #de452a;
@@ -96,4 +96,46 @@ nav ul li a:hover {
 .button:hover {
   background-color: #de5840;
   border: 1px solid #de5840;
+}
+
+
+/*----------------------------------------*/
+/* Hero-banner                            */
+/*----------------------------------------*/
+.hero-banner {
+  height: 92svh;
+  background-image: url("../img/hero-banner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-banner .info-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  gap: 2rem;
+}
+
+.text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.text p {
+  text-align: center;
+}
+
+.text .button {
+  width: 120px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.text .button a {
+  font-size: 16px;
 }
