@@ -1,2 +1,59 @@
 @charset "utf-8";
 
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+body {
+  font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
+  background-color: #f8f9fe;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+/*----------------------------------------*/
+/* Header                                 */
+/*----------------------------------------*/
+header {
+  height: 60px;
+  background-color: #5840de;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #fff;
+}
+
+ul {
+  gap: 30px;
+}
+
+nav ul li {
+  line-height: 60px;
+  list-style: none;
+  cursor: default;
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e4dbf1;
+  text-decoration: none;
+  cursor: pointer;
+  transform: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
