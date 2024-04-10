@@ -18,6 +18,10 @@ body {
   background-color: #fff;
 }
 
+
+/*----------------------------------------*/
+/* Utilities                              */
+/*----------------------------------------*/
 .flex {
   display: flex;
 }
@@ -33,6 +37,10 @@ body {
 .grid {
   display: grid;
   place-items: center;
+}
+
+.gap-20 {
+  gap: 20px;
 }
 
 .gap-30 {
@@ -179,7 +187,7 @@ article {
   width: 50%;
 }
 
-article h3 {
+h3 {
   font-size: 30px;
   margin-top: 10px;
 }
@@ -206,9 +214,139 @@ article .button {
   width: 130px;
 }
 
-.who article h6 {
+h6 {
   color: #2a3e9f;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
+}
+
+/*----------------------------------------*/
+/* Services                               */
+/*----------------------------------------*/
+.services {
+  background-color: #fff;
+}
+
+.grid p {
+  padding: 8px 0 60px;
+}
+
+.price-row {
+  text-align: center;
+}
+
+.price-columns {
+  flex: 0 0 calc(33.333333% - 13.333333px);
+  max-width: calc(33.333333% - 13.333333px);
+  background-color: #f7f8f9;
+  border: 1px solid #f7f8f9;
+  border-radius: 6px;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 0.04);
+  transform: var(--transform);
+  transition: 0.3s;
+}
+
+.price-columns:hover {
+  border: 1px solid #fafafa;
+  box-shadow: 1px 1px 2px 1px rgba(216, 219, 223, 0.45);
+  scale: 1.02;
+}
+
+.standard:hover {
+  border: 1px solid #e1eaf8;
+  box-shadow: 1px 1px 2px 1px rgba(198, 214, 238, 0.45);
+}
+
+.price-columns i {
+  font-size: 60px;
+  margin: 10px 0 15px;
+  color: #203cc8;
+}
+
+.price-row span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+.price-row p {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.price-row h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.price-row ul li {
+  list-style: none;
+  text-align: left;
+  color: rgb(94, 95, 109);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.standard {
+  background-color: #ebf3ff;
+}
+
+
+/*----------------------------------------*/
+/* Stats                                  */
+/*----------------------------------------*/
+.stats {
+  background: #191824 url('../img/stat-back.png') center 25% / cover no-repeat;
+  width: 100%;
+  height: 380px;
+  margin-bottom: 0;
+}
+
+.stats h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  z-index: 9999;
+}
+
+.stats .button {
+  z-index: 9999;
+}
+
+.learn-more {
+  padding: 40px 0 10px 0;
+}
+
+.prize-columns {
+  flex: 0 0 calc(25% - 15px);
+  max-width: calc(25% - 15px);
+  background-color: #fff;
+  z-index: 9999;
+  border-radius: 6px;
+  height: 170px;
+  text-align: center;
+  padding: 20px;
+}
+
+.prize-columns i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #0067ff;
+}
+
+.prize-columns p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.prize-columns span {
+  color: #0067ff;
+  font-size: 30px;
+  font-weight: 900;
 }
