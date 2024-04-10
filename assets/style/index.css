@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+:root {
+  --primary-background: #f8f9fe;
+  --border-radius: 6px;
+  --pointer: pointer;
+  --transform: all 0.25s ease-in-out; 
+}
+
+
 .container {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
@@ -7,11 +15,12 @@
 
 body {
   font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
-  background-color: #f8f9fe;
+  background-color: var(--primary-background);
 }
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .space-between {
@@ -47,13 +56,38 @@ nav ul li {
 
 nav ul li a {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e4dbf1;
   text-decoration: none;
-  cursor: pointer;
-  transform: color 0.25s ease-in-out;
+  cursor: var(--pointer);
+  transform: var(--transform);
 }
 
 nav ul li a:hover {
   color: #fff;
+}
+
+.button {
+  width: 84px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: var(--border-radius);
+  background-color: #de452a;
+  border: 1px solid #de452a;
+  transform: var(--transform);
+}
+
+.button a {
+  padding-left: 13px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  cursor: var(--pointer);
+}
+
+.button:hover {
+  background-color: #de5840;
+  border: 1px solid #de5840;
 }
