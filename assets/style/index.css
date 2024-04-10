@@ -15,16 +15,19 @@
 
 body {
   font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
-  background-color: var(--primary-background);
+  background-color: #fff;
 }
 
 .flex {
   display: flex;
-  align-items: center;
 }
 
 .space-between {
   justify-content: space-between;
+}
+
+.center {
+  align-items: center;
 }
 
 
@@ -36,17 +39,20 @@ header {
   background-color: #5840de;
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 60px;
-  color: #fff;
-}
-
 ul {
   gap: 30px;
 }
+
+.logo {
+  width: 200px;
+  margin-right: 500px;
+}
+
+.logo a img {
+  margin-top: 4px;
+  height: 50px;
+  width: auto;
+}  
 
 nav ul li {
   line-height: 60px;
