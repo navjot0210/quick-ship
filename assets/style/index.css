@@ -30,6 +30,19 @@ body {
   align-items: center;
 }
 
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+section {
+  padding: 75px 0 65px 0;
+}
+
 
 /*----------------------------------------*/
 /* Header                                 */
@@ -131,17 +144,62 @@ nav ul li a:hover {
   padding: 30px 0 50px;
 }
 
-.text .button {
+.text .button, article .button {
   width: 120px;
-  height: 48px;
+  height: 50px;
   line-height: 48px;
   transition: 0.3s;
 }
 
 .text .button a {
-  font-size: 16px;
+  padding-left: 24px;
+  font-size: 19px;
 }
 
-.text .button:hover {
-  transform: translateY(-10px);
+.text .button:hover, article .button:hover {
+  transform: translateY(-6px);
+}
+
+
+/*----------------------------------------*/
+/* About                                  */
+/*----------------------------------------*/
+#about {
+  background-color: #fafafa;
+}
+
+article {
+  width: 50%;
+}
+
+article h3 {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+article p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+aside {
+  width: 50%;
+}
+
+.about-pic {
+  height: 478px;
+  width: 100%;
+  background: #fafafa url('../img/about.png') center 25% / cover no-repeat;
+}
+
+article .button {
+  margin-top: 40px;
+  width: 130px;
+}
+
+.who article h6 {
+  color: #2a3e9f;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
 }
