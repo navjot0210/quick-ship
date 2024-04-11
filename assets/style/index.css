@@ -103,7 +103,7 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.button {
+header .button {
   width: 90px;
   height: 46px;
   line-height: 44px;
@@ -158,19 +158,23 @@ nav ul li a:hover {
   padding: 26px 0 50px;
 }
 
-.text .button, article .button {
+.text .button, article .button, .stats .button {
   width: 120px;
   height: 50px;
   line-height: 48px;
   transition: 0.3s;
+  border-radius: var(--border-radius);
+  background-color: #de452a;
+  border: 1px solid #de452a;
+  transform: var(--transform);
 }
 
-.text .button a {
+.text .button a{
   padding-left: 24px;
   font-size: 19px;
 }
 
-.text .button:hover, article .button:hover {
+.text .button:hover, article .button:hover, .stats .button a:hover {
   transform: translateY(-6px);
 }
 
@@ -314,9 +318,17 @@ h6 {
   z-index: 9999;
 }
 
-.stats .button a{
-  width: 160px;
-  height: 70px;
+.stats .button {
+  width: 125px;
+}
+
+.stats .button a {
+  font-size: 17px;
+}
+
+.stats .button:hover {
+  background-color: #de5840;
+  border: 1px solid #de5840;
 }
 
 .learn-more {
