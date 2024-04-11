@@ -314,8 +314,9 @@ h6 {
   z-index: 9999;
 }
 
-.stats .button {
-  z-index: 9999;
+.stats .button a{
+  width: 160px;
+  height: 70px;
 }
 
 .learn-more {
@@ -326,7 +327,6 @@ h6 {
   flex: 0 0 calc(25% - 15px);
   max-width: calc(25% - 15px);
   background-color: #fff;
-  z-index: 9999;
   border-radius: 6px;
   height: 170px;
   text-align: center;
@@ -350,3 +350,14 @@ h6 {
   font-size: 30px;
   font-weight: 900;
 }
+
+/* .flex .learn a {
+  width: 160px;
+  height: 70px;
+  line-height: 48px;
+  transition: 0.3s;
+}
+
+.learn a:hover {
+  transform: translateY(-6px);
+} */
