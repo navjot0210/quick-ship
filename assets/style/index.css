@@ -363,13 +363,56 @@ h6 {
   font-weight: 900;
 }
 
-/* .flex .learn a {
-  width: 160px;
-  height: 70px;
-  line-height: 48px;
-  transition: 0.3s;
+
+/*----------------------------------------*/
+/* Footer                                 */
+/*----------------------------------------*/
+footer {
+  background-color: #2e2f32;
 }
 
-.learn a:hover {
-  transform: translateY(-6px);
-} */
+footer p {
+  text-align: center;
+  color: #eaeaea;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: #eaeaea;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+footer .container {
+  padding: 50px 30px 30px 0;
+}
+
+footer a:hover {
+  color: #de452a;
+}
+
+footer i {
+  font-size: 25px;
+}
+
+.footer-row-one ul a {
+  margin-right: 30px;
+}
+
+.footer-row-one {
+  margin-bottom: 27px;
+}
+
+.footer-row-one, .footer-row-two {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-row-two li {
+  display: inline;
+}
+
+.footer-row-two li {
+  margin-right: 40px;
+}
