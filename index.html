@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
     <link rel="stylesheet" href="./assets/style/index.css" media="all">
     <script src="./assets/script/app.js" defer></script>
@@ -22,18 +23,19 @@
           <div class="logo"><a href="#"><img src="./assets/img/logo.png"></a></div>
           <ul class="flex center">
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Prices</a></li>
             <li><a href="#track">Orders</a></li>
+            <li><a href="#services">Stats</a></li>
             <div class="button"><a href="#">Sign in</a></div> 
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="hero-banner container">
-        <div class="info-text">
+      <div class="hero-banner">
+        <div class="container info-text flex center">
           <div class="text">
-            <h1>The Shipment Experts</h1>
+            <h1>The Shipment Experts!</h1>
             <p>
               Being experts in the industry, we have created the best shipment plans to help you 
               get your orders in less time.
@@ -45,30 +47,109 @@
       <section id="about">
         <div class="container">
           <div class="who flex gap-30">
-              <article>
-                  <h6>About Us</h6>
-                  <h3>Ship Anywhere With QuickShip</h3>
-                  <p>
-                    Established in 1938, QuickShip has always been at the service of its customers 
-                    aiming to provide the best service with its physical presence in 3 continents 
-                    and cross-border solutions.
-                  </p>
-                  <p>
-                    QuickShip is engaged in shipping, energy, transportation, offshore drilling, and 
-                    retail activities. It operates through the following segments: Ocean, Logistics 
-                    and Services, Terminals and Towage, and Manufacturing and Others. The Logisticsco and Services segment comprises 
-                    freight forwarding, supply chain management, inland haulage, and other logistics 
-                    services.
-                  </p>
-                  <div class="button flex">
-                      <a href="./about.html">Know More</a>
-                  </div>
-              </article>
-              <aside>
-                  <div class="about-pic"></div>
-              </aside>
+            <article>
+              <h6>About Us</h6>
+              <h3>Ship Anywhere With QuickShip</h3>
+              <p>
+                Established in 1938, QuickShip has always been at the service of its customers 
+                aiming to provide the best service with its physical presence in 3 continents 
+                and cross-border solutions.
+              </p>
+              <p>
+                QuickShip is engaged in shipping, energy, transportation, offshore drilling, and 
+                retail activities. It operates through the following segments: Ocean, Logistics 
+                and Services, Terminals and Towage, and Manufacturing and Others. The Logisticsco 
+                and Services segment comprises freight forwarding, supply chain management, 
+                inland haulage, and other logistics services.
+              </p>
+              <div class="button flex">
+                <a href="./about.html">Know More</a>
+              </div>
+            </article>
+            <aside>
+              <div class="about-pic"></div>
+            </aside>
           </div>
-      </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container">
+          <div class="grid">
+            <h6>Our Pricing</h6>
+            <h3>International Shipping Prices</h3>
+            <p>
+              Transparency forms the core of our pricing strategy ensuring best service in 
+              lesser prices.
+            </p>
+          </div>
+          <div class="price-row flex gap-20">
+            <div class="price-columns basic column">
+              <h3>Basic</h3>
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <p><span>$90/</span>lb</p>
+              <ul>
+                <li>Delivers in 6 weeks</li>
+                <li>Basic tracking information</li>
+                <li>Only essentials, no extra perks</li>
+                <li>Ideal for non-urgent shipments</li>
+              </ul>
+            </div>
+            <div class="price-columns standard column">
+              <h3>Standard</h3>
+              <i class="fa-solid fa-rocket"></i>
+              <p><span>$120/</span>lb</p>
+              <ul>
+                <li>Delivers in 4 weeks</li>
+                <li>Advanced tracking features</li>
+                <li>Added customer support options</li>
+                <li>Ensures speed-cost balance</li>
+              </ul>
+            </div>
+            <div class="price-columns express column">
+              <h3>Express</h3>
+              <i class="fa-solid fa-medal"></i>
+              <p><span>$150/</span>lb</p>
+              <ul>
+                <li>Delivers in 2 weeks</li>
+                <li>Advanced tracking capabilities</li>
+                <li>Priority handling and shipping</li>
+                <li>Quickest way with additional features</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="stats" class="stats">
+        <div class="container">
+          <div class="flex space-between">
+            <h2>Take advantage of your experience</h2>
+            <div class="button learn">
+              <a href="#about">Learn more</a>
+            </div>
+          </div>
+          <div class="learn-more flex gap-20">
+            <div class="prize-columns projects column">
+              <i class="fa-solid fa-plane-circle-check"></i>
+              <p>Orders</p>
+              <p><span>250K</span></p>
+            </div>
+            <div class="prize-columns clients column">
+              <i class="fa-solid fa-people-line"></i>
+              <p>Happy Clients</p>
+              <p><span>210K</span></p>
+            </div>
+            <div class="prize-columns visitors column">
+              <i class="fa-solid fa-person"></i>
+              <p>Employees</p>
+              <p><span>80K</span></p>
+            </div>
+            <div class="prize-columns awards column">
+              <i class="fa-solid fa-trophy"></i>
+              <p>Awards Won</p>
+              <p><span>2500</span></p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="track">
         <div class="track-info">
